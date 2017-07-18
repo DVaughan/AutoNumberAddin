@@ -26,6 +26,8 @@ for (var i = 0; i < 10; i++)
 }
 ```
 
+Notice that the listing number changed.
+
 Code listings, figures, and captions are all number sequentially.
 
 ## How it works
@@ -40,6 +42,10 @@ The following are the default pairs of regular expressions:
 * ```.*?<figcaption>Figure (?<Number>\d{1,3})\..*```
 * ```^.*?See Listing (?<Number>\d{1,3})\.?.*$```
 * ```^\s*\*\*\s*Listing (?<Number>\d{1,3})\.\s*\*\*.*$```
+
+Do not worry if you're befuddled by these regular expressions. You will only need to understand them if you wish to use different conventions in your markdown document.
+
+Listing and Table captions are detected if they are surrounded by bold \** asterisks. There must be a single space between Listing caption type and the number.
 
 > **NOTE:** You can modify the regular expressions to suit your needs in the addin's configuration.
 
