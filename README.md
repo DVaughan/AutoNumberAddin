@@ -28,7 +28,7 @@ for (var i = 0; i < 10; i++)
 
 Notice that the listing number changed.
 
-Code listings, figures, and captions are all number sequentially.
+Code listings, figures, and captions are all numbered sequentially.
 
 ## How it works
 This addin uses conventions to determine what is a caption or a reference to a caption.
