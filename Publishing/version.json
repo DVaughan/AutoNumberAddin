@@ -1,10 +1,10 @@
-{
+﻿{
 	"id": "AutoNumberAddin",
 	"name": "Auto Number",
 	"summary": "This addin automatically numbers figures, tables, and code listings.",
 	"description": "This addin automatically numbers figures, tables, and code listings.",
 	"version": "1.0",
 	"minVersion": "1.4.5",
-	"author": "� Daniel Vaughan",
+	"author": "© Daniel Vaughan",
 	"updated": "2017-08-04T12:00:00Z"
 }
