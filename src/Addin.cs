@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -34,7 +35,7 @@ namespace AutoNumberAddin
 			};
 
 			// if you don't want to display config or main menu item clear handler
-			menuItem.ExecuteConfiguration = null;
+			//menuItem.ExecuteConfiguration = null;
 
 			// Must add the menu to the collection to display menu and toolbar items            
 			MenuItems.Add(menuItem);
@@ -184,11 +185,14 @@ namespace AutoNumberAddin
 			}
 		}
 
-//		public override void OnExecuteConfiguration(object sender)
-//		{
-//			MessageBox.Show("Configuration for our sample Addin", "Markdown Addin Sample",
-//							MessageBoxButton.OK, MessageBoxImage.Information);
-//		}
+		public override void OnExecuteConfiguration(object sender)
+		{
+			AutoNumberAddinConfiguration.Current.Write();
+
+			OpenTab(Path.Combine(
+				mmApp.Configuration.CommonFolder, 
+				AutoNumberAddinConfiguration.ConfigFileName));
+		}
 
 		public override bool OnCanExecute(object sender)
 		{
