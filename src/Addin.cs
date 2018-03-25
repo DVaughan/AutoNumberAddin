@@ -78,7 +78,7 @@ namespace AutoNumberAddin
 			MarkdownDocumentEditor editor = GetMarkdownEditor();
 			
 			var markdown = GetMarkdown();
-			string[] lines = markdown.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
+			string[] lines = markdown.Split(new string[] { /*Environment.NewLine*/"\n" }, StringSplitOptions.None);
 			var config = AutoNumberAddinConfiguration.Current;
 			string ignoreMarker = config.IgnoreMarker;
 

@@ -3,8 +3,8 @@
 	"name": "Auto Number",
 	"summary": "This addin automatically numbers figures, tables, and code listings.",
 	"description": "This addin automatically numbers figures, tables, and code listings.",
-	"version": "1.1",
+	"version": "1.2",
 	"minVersion": "1.4.5",
 	"author": "© Daniel Vaughan",
-	"updated": "2017-08-04T12:00:00Z"
+	"updated": "2018-03-25T12:00:00Z"
 }
